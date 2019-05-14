@@ -52,10 +52,20 @@
 	访问修饰符  
 		public		任何人都能修改
 		private		只有类内部能使用
-		protected	只有类和子类能使用
+		protected	只有类和子类能使用 
+		
+	修饰符
+		static		静态成员-无需实例化即可使用
+		const			只读成员 类似java中的final
+		
+	存取器
+		用get  和  set  但是不能编译到es4及以下 因为要用到es5的东西
+		tsc --target 			查看能编译到的版本
+		tsc -t es5 1.ts  	编译到es5
 	
 3、高级特性
 	抽象 接口
+	
 		
 		
 		
