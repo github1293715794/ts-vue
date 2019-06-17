@@ -1,8 +1,5 @@
 ## 功能描述  
-在vue项目中使用 typescript  
-1. 安装  
-`npm install -g typescript`  
-`tsc -v`
-2. cmd中编译  
-`tsc 1.ts`  
-`node 1.js`
+vue源码阅读  
+1. 数据代理  
+使用`Object.defineProperty()`实现数据代理  
+使用`document.createDocumentFragment`实现模板解析  
