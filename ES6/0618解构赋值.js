@@ -23,6 +23,12 @@ console.log(name, age, job);
 {
   当函数中返回的是json数据时就可以用
   let {name, age, job} = func();
+
+  function fu({a, b='默认'}){
+    console.log(a,b)
+  }
+
+  fu({a: 'a的值'});
 }
 
 
