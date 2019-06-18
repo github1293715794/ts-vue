@@ -50,7 +50,18 @@
   show(1, 5, 2, 9, 7)
 }
 {
+  // ... 既能展开，又能合成数组 最后几项合并也可以
+  function show(a, b,...c) {
+    // 但必须放到最后
+    console.log(a,b,c)
+  }
+  show(1, 5, 2, 9, 7)
+}
+
+// 将伪数组转换为真数组
+{
   function show() {
+    console.log(arguments instanceof Array)
     let a = Array.prototype.slice.call(arguments)
     a.sort()
     console.log(a)
