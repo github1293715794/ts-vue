@@ -40,4 +40,7 @@ console.log(name, age, job);
 
 import {a, b, c} from '...'
 
+// 工作中遇到的问题，当页面数据层级太多时，会出现修改数据dom不刷新的情况，可以使用解构赋值
+// vue中还有this.$forceUpdate();
+this.batchEditParams.gridData = [...this.batchEditParams.gridData];
 
