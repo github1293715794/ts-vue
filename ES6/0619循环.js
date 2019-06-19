@@ -4,7 +4,7 @@
  * 20190619学习笔记
  */
 
-// 循环
+// 循环  es5语法
 let arr = ['apple', 'banana', 'pear']
 arr.forEach((val, index, arr) => {
   console.log(val, index, arr)
