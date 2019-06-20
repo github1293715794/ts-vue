@@ -4,4 +4,7 @@
  * 20190620学习笔记
  */
 
-//  
+//  模块化
+import {a, b} from ''
+// 凡是export 的都需要 {}
+// export default 的不需要 {}
