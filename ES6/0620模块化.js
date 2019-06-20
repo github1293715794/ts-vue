@@ -10,3 +10,8 @@ import {a, b} from ''
 // export default 的不需要 {}
 
 // export / export default 出来的是一个对象 则需要.调用
+// 按需加载
+import('./modules/1.js')
+import('./modules/1.js').then(res=> {
+  console.log(res.a + res.b)
+})
