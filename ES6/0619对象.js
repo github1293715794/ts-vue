@@ -16,3 +16,7 @@ let newArr = Object.assign([], arr1)
 // 2
 // 将此数据传给子组件：JSON.stringify(对象)
 // 子组件接收时再转化：JSON.parse();
+
+
+// 判断是否相等
+let b = Object.is(NaN, NaN);

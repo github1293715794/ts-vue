@@ -10,10 +10,13 @@ for (let item of arr) {
 
 }
 for (let item of arr.keys()) {
-
+// Object.keys(arr)
 }
 for (let item of arr.entries()) {
-
+  // [0, apple]  返回的是索引和值   取值 item[0]  item[1]
+}
+for (let [key, val] of arr.entries()) {
+  // key  val
 }
 
 {
@@ -52,5 +55,12 @@ find // 用来去查找数组中第一个符合的项   如果没找到返回und
   let b = arr.findIndex((val, index, arr) => {
     return val > 7
   })
+  console.log(b)
+}
+
+// 返回true false
+{
+  let arr = [1, 5, 9, 4, 8]
+  let b = arr.includes(9)
   console.log(b)
 }
