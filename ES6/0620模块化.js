@@ -8,3 +8,5 @@
 import {a, b} from ''
 // 凡是export 的都需要 {}
 // export default 的不需要 {}
+
+// export / export default 出来的是一个对象 则需要.调用
