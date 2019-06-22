@@ -15,3 +15,5 @@ import('./modules/1.js')
 import('./modules/1.js').then(res=> {
   console.log(res.a + res.b)
 })
+
+// 百度编辑器
