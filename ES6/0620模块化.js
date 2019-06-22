@@ -17,6 +17,7 @@ import('./modules/1.js').then(res=> {
 })
 
 // 百度编辑器
+vue-ueditor-wrap
 // 用key值保存状态
 // 将示例保存下来
 // v-model绑定值
