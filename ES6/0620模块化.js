@@ -19,5 +19,13 @@ import('./modules/1.js').then(res=> {
 // 百度编辑器
 vue-ueditor-wrap
 // 用key值保存状态
+再次打开时
+if(!!this.bindId) {
+  this.editor = UE.getEditor(this.bindId, this.myConfig)
+  console.log(this.editor)
+  this.editor.execCommand('insertHtml', `<input id="企业地址"
+      style="color: #137EFF;border: 0;outline: 0;font-size: 12px;background: transparent;"
+      type="reset" title="企业地址" value="#企业地址#">`, true);
+}
 // 将示例保存下来
 // v-model绑定值
