@@ -5,3 +5,8 @@
  */
 
 // 类
+class Person {
+  constructor() {
+    // 构造方法
+  }
+}
