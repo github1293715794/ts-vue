@@ -6,8 +6,9 @@
 
 // 类
 class Person {
-  constructor() {
-    // 构造方法
+  constructor(name, age) {
+    // 构造方法 调用new时，自动执行
+    console.log(name, age);
   }
 }
 
