@@ -10,3 +10,5 @@ class Person {
     // 构造方法
   }
 }
+
+let p1 = new Person('js', 12);
