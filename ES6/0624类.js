@@ -4,6 +4,7 @@
  * 20190624学习笔记
  */
 
+// ES6里 class 没有提升功能， es5可以 function Person(){}
 // 类
 class Person {
   constructor(name, age) {
