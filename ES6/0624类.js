@@ -9,6 +9,11 @@ class Person {
   constructor(name, age) {
     // 构造方法 调用new时，自动执行
     console.log(name, age);
+    this.name = name;
+    this.age = age;
+  }
+  showName() {
+    return `名字为${this.name}`;
   }
 }
 
