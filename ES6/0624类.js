@@ -40,3 +40,29 @@ let p1 = new Person('js', 12);
   let p1 = new Person('js', 12);
   console.log(p1[aaa]());
 }
+
+// 矫正this
+fn.apply(this指向谁, [arg1, arg2...])
+fn.call(this指向谁, arg1, arg2...)
+fn.bind()
+
+{
+  class Person {
+    constructor(name, age) {
+      // 构造方法 调用new时，自动执行
+      console.log(name, age);
+      this.name = name;
+      this.age = age;
+      this.showName = this.showName.bind(this) // 矫正this
+    }
+    showName() {
+      return `名字为${this.name}`;
+    }
+  }
+  
+  let p1 = new Person('js', 12);
+
+  let {showName} = p1; // 解构出来
+  console.log(showName()) // 会报错 矫正this的方法是 构造函数中加bind
+}
+
