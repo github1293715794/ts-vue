@@ -78,5 +78,20 @@ fn.bind()
     }
   }
 
-  
+  class Student extends Person {
+    constructor(name, skill){
+      super(name);
+      this.skill = skill;
+    }
+    showName(){
+      super.showName();// 把父类的showName也执行
+      console.log('子类的showName')
+      return `名字为: ${this.name}`
+    }
+  }
+
+  let stu1 = new Student('js', '逃学');
+  console.log(stu1.name)
+  console.log(stu1.skill)
+  console.log(stu1.showName())
 }
