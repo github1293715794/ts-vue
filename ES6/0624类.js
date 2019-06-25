@@ -66,3 +66,17 @@ fn.bind()
   console.log(showName()) // 会报错 矫正this的方法是 构造函数中加bind
 }
 
+// 继承
+{
+  class Person{
+    constructor(name) {
+      this.name = name;
+    }
+    showName(){
+      console.log('父类的showName')
+      return `名字为: ${this.name}000`
+    }
+  }
+
+  
+}
