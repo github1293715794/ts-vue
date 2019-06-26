@@ -25,3 +25,6 @@
 a.js
 exports.x = 'x'
 
+b.js
+var md = require('./a.js')
+md // {x: 'x'}
