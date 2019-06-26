@@ -21,6 +21,7 @@
 
 增加服务器的数量 分布式
 
+// 模块化
 // commonjs规范
 a.js
 exports.x = 'x'
