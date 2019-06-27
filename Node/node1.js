@@ -29,3 +29,7 @@ exports.x = 'x'
 b.js
 var md = require('./a.js')
 md // {x: 'x'}
+// 第8节
+基本数据保存在 栈内存中
+
+引用数据保存在 堆内存中
