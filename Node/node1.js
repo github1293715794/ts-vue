@@ -40,5 +40,5 @@ npm remove 包名 --save  将依赖也删除
 
 npm i math --save   // 安装的同时设置为依赖
 
-// 13
+// 13 14
 vue-admi
